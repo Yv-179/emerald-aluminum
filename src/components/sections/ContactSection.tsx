@@ -196,7 +196,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section className="relative bg-[#050a0f] px-4 py-24 md:px-8" ref={ref}>
+    <section id="contact" className="relative bg-[#050a0f] px-4 py-24 md:px-8" ref={ref}>
 
       {/* Subtle top separator */}
       <div

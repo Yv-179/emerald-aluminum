@@ -194,6 +194,9 @@ export default function HeroSection() {
 
           {/* CTA Button */}
           <motion.button
+            onClick={() =>
+              document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+            }
             className="group inline-flex items-center gap-3 rounded-xl px-8 py-4 text-base font-bold text-white transition-shadow duration-300"
             style={{
               background:
