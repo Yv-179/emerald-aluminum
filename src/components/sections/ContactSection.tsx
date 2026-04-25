@@ -44,8 +44,8 @@ const CONTACT_ITEMS = [
   {
     Icon: Mail,
     label: "מייל",
-    value: "info@aluminium-co.co.il",
-    href: "mailto:info@aluminium-co.co.il",
+    value: "moshev107@gmail.com",
+    href: "mailto:moshev107@gmail.com",
     iconBg: "rgba(56,130,210,0.12)",
     iconColor: "#7dd3fc",
     glow: "rgba(56,189,248,0.12)",
@@ -159,11 +159,10 @@ function ServiceSelect() {
 
       <label
         htmlFor="service"
-        className={`pointer-events-none absolute start-0 transition-all duration-200 ${
-          value
+        className={`pointer-events-none absolute start-0 transition-all duration-200 ${value
             ? "top-2 text-xs text-slate-500"
             : "top-[22px] text-base text-slate-500"
-        } peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-400`}
+          } peer-focus:top-2 peer-focus:text-xs peer-focus:text-sky-400`}
       >
         שירות נדרש
       </label>
@@ -369,10 +368,10 @@ export default function ContactSection() {
                     whileHover={
                       status !== "sending"
                         ? {
-                            scale: 1.02,
-                            boxShadow:
-                              "0 0 36px rgba(56,189,248,0.5), 0 0 80px rgba(56,189,248,0.2)",
-                          }
+                          scale: 1.02,
+                          boxShadow:
+                            "0 0 36px rgba(56,189,248,0.5), 0 0 80px rgba(56,189,248,0.2)",
+                        }
                         : {}
                     }
                     whileTap={{ scale: 0.98 }}
