@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Heebo } from "next/font/google";
+import Header from "@/components/layout/Header";
+import StickyCallButton from "@/components/layout/StickyCallButton";
 import "./globals.css";
 
 const heebo = Heebo({
@@ -9,8 +11,9 @@ const heebo = Heebo({
 });
 
 export const metadata: Metadata = {
-  title: "עבודות אלומיניום",
-  description: "שירותי אלומיניום מקצועיים – חלונות, דלתות, מעקות ועוד",
+  title: "אמרלד אלומיניום – עבודות אלומיניום באיכות ללא פשרות",
+  description:
+    "שירותי אלומיניום מקצועיים – חלונות, תריסים חשמליים, שיפוץ ותיקון. ייעוץ והצעת מחיר ללא עלות. חייגו 050-535-4933",
 };
 
 export default function RootLayout({
@@ -21,7 +24,9 @@ export default function RootLayout({
   return (
     <html lang="he" dir="rtl">
       <body className={`${heebo.variable} font-heebo antialiased`}>
+        <Header />
         {children}
+        <StickyCallButton />
       </body>
     </html>
   );
