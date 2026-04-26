@@ -7,36 +7,32 @@ import { motion, useInView } from "framer-motion";
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 /* ─── Gallery data ─────────────────────────────────────────────── */
+/* Photos live in /public/gallery/ — see README there for filenames. */
 const PROJECTS = [
   {
-    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-    alt: "חלון אלומיניום מודרני בסלון",
-    label: "חלון סלון מודרני",
+    src: "/gallery/01.jpg",
+    alt: "חלון אלומיניום הזזה ארבע כנפיים עם תריס",
+    label: "חלון הזזה 4 כנפיים",
   },
   {
-    src: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80",
-    alt: "דלת הזזה מאלומיניום",
-    label: "דלת הזזה מעוצבת",
+    src: "/gallery/02.jpg",
+    alt: "התקנת חלון פנורמי גדול בסלון",
+    label: "חלון פנורמי בהתקנה",
   },
   {
-    src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80",
-    alt: "ויטרינה אלומיניום עם זכוכית",
-    label: "ויטרינת זכוכית",
+    src: "/gallery/03.jpg",
+    alt: "חלון הזזה דו-כנפי עם תריס בחדר שינה",
+    label: "חלון חדר שינה",
   },
   {
-    src: "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=800&q=80",
-    alt: "חלונות אלומיניום לבניין מגורים",
-    label: "חלונות בניין מגורים",
+    src: "/gallery/04.jpg",
+    alt: "חלון רחב ארבע כנפיים עם תריס חשמלי",
+    label: "חלון רחב עם תריס",
   },
   {
-    src: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80",
-    alt: "תריס אלומיניום חשמלי",
-    label: "תריסי אלומיניום",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=800&q=80",
-    alt: "מעקה אלומיניום מעוצב",
-    label: "מעקה מעוצב",
+    src: "/gallery/05.jpg",
+    alt: "חלונות אמבטיה עם זכוכית מט וברזים בגוון פליז",
+    label: "חלונות אמבטיה",
   },
 ] as const;
 
