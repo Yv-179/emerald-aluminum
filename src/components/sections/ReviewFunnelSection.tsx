@@ -166,7 +166,7 @@ export default function ReviewFunnelSection() {
 
             {rating === 0 && (
               <p className="text-xs text-slate-500">
-                בחרו מספר כוכבים כדי להתחיל
+                דרגו אותנו
               </p>
             )}
           </div>
