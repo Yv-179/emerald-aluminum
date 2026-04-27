@@ -145,18 +145,17 @@ export default function ReviewFunnelSection() {
                     className="rounded-full p-1 outline-none transition-colors duration-150 focus-visible:ring-2 focus-visible:ring-emerald-400/60 disabled:cursor-default"
                   >
                     <Star
-                      className={`h-9 w-9 transition-all duration-200 sm:h-10 sm:w-10 ${
-                        filled
+                      className={`h-9 w-9 transition-all duration-200 sm:h-10 sm:w-10 ${filled
                           ? "fill-amber-400 text-amber-400"
                           : "text-slate-600"
-                      }`}
+                        }`}
                       strokeWidth={1.4}
                       style={
                         filled
                           ? {
-                              filter:
-                                "drop-shadow(0 0 8px rgba(251,191,36,0.45))",
-                            }
+                            filter:
+                              "drop-shadow(0 0 8px rgba(251,191,36,0.45))",
+                          }
                           : undefined
                       }
                     />
@@ -302,10 +301,10 @@ export default function ReviewFunnelSection() {
                     status === "submitting"
                       ? undefined
                       : {
-                          scale: 1.02,
-                          boxShadow:
-                            "0 0 36px rgba(16,185,129,0.5), inset 0 1px 0 rgba(255,255,255,0.18)",
-                        }
+                        scale: 1.02,
+                        boxShadow:
+                          "0 0 36px rgba(16,185,129,0.5), inset 0 1px 0 rgba(255,255,255,0.18)",
+                      }
                   }
                   whileTap={{ scale: 0.98 }}
                 >
