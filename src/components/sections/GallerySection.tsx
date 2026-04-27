@@ -70,8 +70,8 @@ export default function GallerySection() {
   /* ── Keyboard navigation ─────────────────────────────────────── */
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "ArrowLeft") next(); // RTL: left = next
-      if (e.key === "ArrowRight") prev(); // RTL: right = prev
+      if (e.key === "ArrowLeft") prev();
+      if (e.key === "ArrowRight") next();
       if (e.key === "Escape") setLightbox(null);
     };
     window.addEventListener("keydown", handleKey);
@@ -81,18 +81,16 @@ export default function GallerySection() {
   /* ── Drag handler ────────────────────────────────────────────── */
   const handleDragEnd = (_: unknown, info: PanInfo) => {
     if (info.offset.x > SWIPE_THRESHOLD) {
-      // Swiped right → in RTL this means next
-      next();
-    } else if (info.offset.x < -SWIPE_THRESHOLD) {
-      // Swiped left → in RTL this means prev
       prev();
+    } else if (info.offset.x < -SWIPE_THRESHOLD) {
+      next();
     }
   };
 
   /* ── Slide animation variants ────────────────────────────────── */
   const slideVariants = {
     enter: (dir: number) => ({
-      x: dir > 0 ? 400 : -400,
+      x: dir > 0 ? -400 : 400,
       opacity: 0,
       scale: 0.92,
     }),
@@ -102,7 +100,7 @@ export default function GallerySection() {
       scale: 1,
     },
     exit: (dir: number) => ({
-      x: dir > 0 ? -400 : 400,
+      x: dir > 0 ? 400 : -400,
       opacity: 0,
       scale: 0.92,
     }),
