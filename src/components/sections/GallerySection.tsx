@@ -81,9 +81,9 @@ export default function GallerySection() {
   /* ── Drag handler ────────────────────────────────────────────── */
   const handleDragEnd = (_: unknown, info: PanInfo) => {
     if (info.offset.x > SWIPE_THRESHOLD) {
-      prev();
-    } else if (info.offset.x < -SWIPE_THRESHOLD) {
       next();
+    } else if (info.offset.x < -SWIPE_THRESHOLD) {
+      prev();
     }
   };
 
