@@ -14,29 +14,29 @@ const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 /* ─── Gallery data ─────────────────────────────────────────────── */
 const PROJECTS = [
-  { src: "/gallery/01.jpg", label: "חלון הזזה 4 כנפיים" },
+  { src: "/gallery/06.jpg", label: "חלונות חזית של צימר" },
   { src: "/gallery/02.jpg", label: "חלון פנורמי בסלון" },
   { src: "/gallery/03.jpg", label: "סגירת מרפסת" },
   { src: "/gallery/04.jpg", label: "חדר עבודה אטום לרעשים" },
   { src: "/gallery/05.jpg", label: "חלונות אמבטיה" },
-  { src: "/gallery/06.jpg", label: "חלונות חזית של צימר" },
+  { src: "/gallery/01.jpg", label: "חלון הזזה 4 כנפיים" },
   { src: "/gallery/0x.jpg", label: "עבודת אלומיניום" },
-  { src: "/gallery/20190210_134602.jpg", label: "פרויקט התקנה" },
+  { src: "/gallery/20190210_134602.jpg", label: "חלונות עם תריס חשמלי" },
   { src: "/gallery/20190423_135052.jpg", label: "חלונות ודלתות" },
-  { src: "/gallery/20191215_164244.jpg", label: "עבודת אלומיניום מקצועית" },
-  { src: "/gallery/20220803_122705.jpg", label: "התקנת חלונות" },
-  { src: "/gallery/20241103_144300.jpg", label: "פרויקט חדש" },
-  { src: "/gallery/20250123_162701.jpg", label: "עבודה אחרונה" },
-  { src: "/gallery/20250408_140516.jpg", label: "פרויקט עדכני" },
-  { src: "/gallery/IMG-20180221-WA0003.jpg", label: "סגירת מרפסת מעוצבת" },
+  { src: "/gallery/20191215_164244.jpg", label: "עבודת אלומיניום בתהליך הרכבה" },
+  { src: "/gallery/20220803_122705.jpg", label: "חלונות הזזה בסלון" },
+  { src: "/gallery/20241103_144300.jpg", label: "חדר עבודה אטום לרעשים" },
+  { src: "/gallery/20250123_162701.jpg", label: "ויטרינה לחזית של עסק" },
+  { src: "/gallery/20250408_140516.jpg", label: "דלת אלומיניום עם זכוכית חלבית" },
+  { src: "/gallery/IMG-20180221-WA0003.jpg", label: "ויטרינות יציאה לחצר" },
   { src: "/gallery/IMG_20141109_162504.jpg", label: "עבודת אלומיניום קלאסית" },
   { src: "/gallery/IMG_20151022_133048.jpg", label: "חלונות מעוצבים" },
-  { src: "/gallery/IMG_20170723_164045.jpg", label: "דלתות אלומיניום" },
-  { src: "/gallery/IMG_20180522_132347.jpg", label: "חלון תמונה גדול" },
+  { src: "/gallery/IMG_20170723_164045.jpg", label: "חלונות אלומיניום" },
+  { src: "/gallery/IMG_20180522_132347.jpg", label: "חלון גדול" },
   { src: "/gallery/IMG_20180529_152537.jpg", label: "פרויקט מגורים" },
   { src: "/gallery/IMG_20180529_160829.jpg", label: "התקנה מקצועית" },
   { src: "/gallery/IMG_20181120_154010.jpg", label: "חלונות ותריסים" },
-  { src: "/gallery/x.jpg", label: "פרויקט מיוחד" },
+  { src: "/gallery/x.jpg", label: "חלון הזזה עם 4 כנפיים" },
   { src: "/gallery/xx.jpg", label: "עבודה בהתאמה אישית" },
   { src: "/gallery/xxx.jpg", label: "תוצאה מושלמת" },
 ];
@@ -294,11 +294,10 @@ export default function GallerySection() {
                 aria-label={`תמונה ${idx + 1}`}
               >
                 <span
-                  className={`block rounded-full transition-all duration-300 ${
-                    idx === current
+                  className={`block rounded-full transition-all duration-300 ${idx === current
                       ? "h-2.5 w-2.5 bg-sky-400 shadow-[0_0_8px_rgba(56,189,248,0.5)]"
                       : "h-2 w-2 bg-white/25 group-hover:bg-white/50"
-                  }`}
+                    }`}
                 />
               </button>
             ))}
@@ -314,11 +313,10 @@ export default function GallerySection() {
                 <button
                   key={idx}
                   onClick={() => goTo(idx)}
-                  className={`relative flex-shrink-0 overflow-hidden rounded-lg transition-all duration-300 ${
-                    idx === current
+                  className={`relative flex-shrink-0 overflow-hidden rounded-lg transition-all duration-300 ${idx === current
                       ? "ring-2 ring-sky-400 ring-offset-2 ring-offset-[#050a0f] opacity-100 scale-105"
                       : "opacity-40 hover:opacity-70 grayscale hover:grayscale-0"
-                  }`}
+                    }`}
                   style={{ width: 64, height: 48 }}
                   aria-label={label}
                 >
