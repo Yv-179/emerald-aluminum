@@ -15,7 +15,7 @@ import {
  * Both can also be moved to env vars (NEXT_PUBLIC_*) if preferred.
  * ──────────────────────────────────────────────────────────────── */
 const N8N_WEBHOOK_URL = "https://yarinv.app.n8n.cloud/webhook/efe375fc-c75d-43bf-95ee-573523b68890";
-const GOOGLE_REVIEW_LINK = "YOUR_GOOGLE_REVIEW_LINK_HERE";
+const GOOGLE_REVIEW_LINK = "https://g.page/r/CWSC3d7J8oprEAI/review";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
