@@ -30,8 +30,8 @@ export default function Header() {
 
         {/* Click-to-call CTA */}
         <a
-          href="tel:0505354933"
-          aria-label="חייגו עכשיו 050-535-4933"
+          href="tel:0507756446"
+          aria-label="חייגו עכשיו 050-775-6446"
           className="group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold text-white transition-all duration-200 hover:scale-[1.03] active:scale-[0.97] sm:gap-2.5 sm:px-4"
           style={{
             background: "linear-gradient(135deg, #059669 0%, #10b981 100%)",
@@ -42,7 +42,7 @@ export default function Header() {
           <Phone className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" strokeWidth={2.2} />
           {/* Compact label on mobile, full label on desktop */}
           <span className="hidden sm:inline">חייגו עכשיו:</span>
-          <span dir="ltr" className="font-bold tracking-wide">050-535-4933</span>
+          <span dir="ltr" className="font-bold tracking-wide">050-775-6446</span>
         </a>
       </div>
     </header>

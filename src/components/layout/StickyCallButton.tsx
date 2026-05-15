@@ -9,8 +9,8 @@ import { Phone } from "lucide-react";
 export default function StickyCallButton() {
   return (
     <a
-      href="tel:0505354933"
-      aria-label="חייגו עכשיו - 050-535-4933"
+      href="tel:0507756446"
+      aria-label="חייגו עכשיו - 050-775-6446"
       className="fixed bottom-5 start-5 z-50 flex h-14 w-14 items-center justify-center rounded-full text-white shadow-[0_8px_24px_rgba(16,185,129,0.45),0_0_0_4px_rgba(16,185,129,0.12)] transition-transform duration-200 active:scale-95 lg:hidden"
       style={{
         background:
