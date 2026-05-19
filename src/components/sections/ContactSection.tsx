@@ -44,8 +44,8 @@ const CONTACT_ITEMS = [
   {
     Icon: Mail,
     label: "מייל",
-    value: "moshev107@gmail.com",
-    href: "mailto:moshev107@gmail.com",
+    value: "info@moshe-aluminum.com",
+    href: "mailto:info@moshe-aluminum.com",
     iconBg: "rgba(56,130,210,0.12)",
     iconColor: "#7dd3fc",
     glow: "rgba(56,189,248,0.12)",
