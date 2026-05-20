@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Heebo } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/layout/Header";
 import StickyCallButton from "@/components/layout/StickyCallButton";
 import "./globals.css";
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Header />
         {children}
         <StickyCallButton />
+        <Analytics />
       </body>
     </html>
   );
